@@ -1,0 +1,58 @@
+\documentclass[]{thesis-style}
+% options:
+% [germanthesis] - Thesis is written in German
+% [plainunnumbered] - Don't print numbers on plain pages
+% [earlydraft] - Settings for quick draft printouts
+% [watermark] - Print current time/date at bottom of each page
+% [phdthesis] - switch to PhD thesis style
+% [twoside] - double sided
+% [cutmargins] - text body fills complete page
+
+\author{John~Doe}
+\title{Thesis Title}
+\birthday{1. Jannuar 1970}
+\birthplace{Innsbruck}
+%\thesisstart{1. Januar 2009}
+\thesistype{Master's thesis}
+\thesistypegerman{Masterarbeit}
+\thesiscite{Master's thesis}
+\advisors{Jane~Roe{,}~Ph.D.}
+
+\newcommand{\plotwidth}{0.6\textwidth}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\pagenumbering{arabic}
+
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\begin{otherlanguage*}{american}
+\end{otherlanguage*}
+
+\chapter*{Kurzfassung}
+\addcontentsline{toc}{chapter}{Kurzfassung}
+\begin{otherlanguage*}{ngerman}
+\end{otherlanguage*}
+\acresetall%
+
+\chapter{Introduction}
+\chapter{Fundamentals}
+\chapter{Developed architecture / system design / implementation}
+\chapter{Measurement results / evaluation / discussion}
+\chapter{Conclusion}
+
+\cleardoublepage%
+
+\listofabbreviations
+\clearpage
+
+\listoffigures
+\clearpage
+
+\listoftables
+\clearpage
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}
